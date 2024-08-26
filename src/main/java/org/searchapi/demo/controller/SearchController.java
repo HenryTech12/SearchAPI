@@ -34,10 +34,4 @@ public class SearchController {
        );
    }
 
-  @RequestMapping("/save")
-   @ResponseBody
-   public String saveInfo() {
-      return supplierService.saveInfo();
-   }
-
-  }
+}

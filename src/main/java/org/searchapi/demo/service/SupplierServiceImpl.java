@@ -31,36 +31,4 @@ public class SupplierServiceImpl implements SupplierService {
                );
     }
 
-    @Override
-   public String saveInfo() {
-        Suppliers s = new Suppliers();
-        s.setCompanyName("Lorova");
-        s.setNatureOfBusiness("Small Scale");
-        s.setLocation("Nigeria");
-        s.setWebsite("bretech.com");
-        s.setManufacturingProcess("3d printing");
- 
-
-        Suppliers s1 = new Suppliers();
-        s1.setCompanyName("DreTech");
-        s1.setNatureOfBusiness("Small Scale");
-        s1.setLocation("Nigeria");
-        s1.setWebsite("bre.com");
-        s1.setManufacturingProcess("3d printing");
-
-
-         Suppliers s2 = new Suppliers();
-        s2.setCompanyName("Vorala");
-        s2.setNatureOfBusiness("Large Scale");
-        s2.setLocation("United States");
-        s2.setWebsite("bretech.com");
-        s2.setManufacturingProcess("casting");
-
-        repo.save(s);
-        repo.save(s1);
-        repo.save(s2);
-
-        return "SUCCESS";
-         
-    }
 }

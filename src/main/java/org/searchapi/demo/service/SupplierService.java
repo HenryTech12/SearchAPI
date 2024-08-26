@@ -13,5 +13,4 @@ public interface SupplierService {
         String natureOfBusiness,
         String manufacturingProcess 
       );
-      String saveInfo();
 }
